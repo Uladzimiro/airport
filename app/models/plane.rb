@@ -11,7 +11,6 @@ class Plane < ActiveRecord::Base
 
   scope :with_state, ->(state) { joins(:states).where(states: {id: State.current, name: state}) }
 
-
   def current_state
     states.last.name.inquiry
   end
