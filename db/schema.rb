@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20130707151025) do
 
   create_table "planes", :force => true do |t|
     t.integer  "plane_type_id"
-    t.integer  "serial"
+    t.string   "serial"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

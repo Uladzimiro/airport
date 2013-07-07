@@ -3,5 +3,5 @@ class PlaneType < ActiveRecord::Base
 
   attr_accessible :manufacturer, :name, :picture
 
-  has_attached_file :picture, styles: { :medium => "256x256>", :thumb => "100x100>" }
+  has_attached_file :picture, styles: { airfield: "80x80>", description: '150x150>', :thumb => "100x100>" }
 end
