@@ -12,3 +12,16 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+.airfield {
+  background-color: green;
+}
+.ready {
+  background-color: yellow;
+}
+.start {
+  background-color: red;
+}
+.takeoff {
+  background-color: blue;
+}

@@ -1,0 +1,15 @@
+{{view Ember.TextField valueBinding="serial" action="addPlane"}}
+<ul>
+  {{#each controller}}
+    <li {{bindAttr class="next current_state"}}>
+      {{#if next}}
+        <span>
+          <b>Next</b>
+        </span>
+      {{/if}}
+      {{current_state}}: {{plane_type.manufacturer}} - {{plane_type.name}} - {{serial}}
+    </li>
+  {{/each}}
+</ul>
+
+<button {{action nextPlane}}>Next Plane</button>
