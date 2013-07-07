@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130707115708) do
+ActiveRecord::Schema.define(:version => 20130707130318) do
 
   create_table "plane_types", :force => true do |t|
     t.string   "manufacturer"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(:version => 20130707115708) do
     t.datetime "picture_updated_at"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
+  end
+
+  create_table "planes", :force => true do |t|
+    t.integer  "plane_type_id"
+    t.integer  "serial"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end
