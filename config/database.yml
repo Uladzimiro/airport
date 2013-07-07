@@ -1,0 +1,25 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: airport_development
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: airport_test
+  username: root
+  password: root
+  timeout: 5000
+  pool: 5
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: airport_production
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+
