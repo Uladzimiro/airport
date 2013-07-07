@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'mysql2'
 gem 'ember-rails'
+gem "paperclip"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +19,13 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'faker'
 end
 
 gem 'jquery-rails'
