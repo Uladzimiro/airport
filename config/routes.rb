@@ -1,6 +1,10 @@
 Airport::Application.routes.draw do
   root to: 'application#index'
 
+  resources :planes
+  resources :plane_types, only: [:show]
+  resources :states, only: [:index, :show]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
